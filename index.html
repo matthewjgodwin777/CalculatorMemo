@@ -1,0 +1,80 @@
+<html>
+<head>
+<link rel='stylesheet' href="https://drive.google.com/uc?id=1u9Pl8NwzJ2rObK056yvN7PjQNK37WaNd&export=download">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel='stylesheet' href="style.css">
+<title>JS Basic Calculator and Memo</title>
+</head>
+<body>
+<h1 id="calculatorheading">Interactive Basic Calculator</h1>
+<br>
+<div class="alert alert-danger" style="font-family: Century Gothic;" id='err'></div>
+<form>
+<table id="tableone">
+     <tr>
+       <th>1st Num</th>
+       <th><p class="center">Select Operator:</p></th>
+       <th>2nd Num</th>
+     </tr> 
+     <tr>
+       <td><input type="number" id="num1"></td>
+       <td id="op" class='center'>
+         <a class='dropdown-trigger btn' id="+" >+</a>
+        <a class='dropdown-trigger btn' id="-" >-</a>
+        <a class='dropdown-trigger btn' id="*" >*</a>
+        <a class='dropdown-trigger btn' id="/" >/</a>
+        <a class='dropdown-trigger btn' id="^" >^</a>
+        <a class='dropdown-trigger btn' id="%" >%</a>
+        <br><br><p class="center" style="color: black" id="sel"><b>No Operator Selected</b></p></td>
+       <td><input type="number" id="num2"></td>
+     </tr>
+     
+</table>
+</form>
+<br>
+<div id="loading">
+  <h3><i><p id="calc" style="color: white">Calculating...</p></i></h3>
+  <br>
+  <img id="loadinggif" src="loading.gif" alt="Loading GIF" class="centre" height="100" width="100"/>
+</div>
+<span id="answer" class='center'>
+  <br>
+<h3 style="color: rgb(225, 255, 0)" style="font-family: Century Gothic;">Answer</h3>
+<b class='center' style="color: rgb(61, 0, 108)">___________________________________</b>
+<br>
+<br>
+<div id="ansval"></div>
+<br>
+</span>
+<br>
+<input type="reset" class="btn" id="reset">
+<button type="button" class="btn" id="calculate">Calculate</button>
+<br>
+<br>
+<br>
+<h2>New Memo : </h2>
+<br>
+ <table>
+   <tr>
+    <td><p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Title : </p><p id='requ1'>*required</p></td>
+    <td><input type="text" name="username" id="title"></td>
+   </tr>
+   <tr>
+    <td>Comment : <p id='requ2'>*required</p></td>
+    <td><input type="text" name="comment" id="comment"></td>
+   </tr>
+    <tr>
+    <td><a class='dropdown-trigger btn' id="su">Create</a></td>
+   </tr>
+   </table>
+<br>
+<h2>Recent Memos :   <a class='center btn' id="clearallmemos">Clear All</a></h2>
+<br>
+<span id='commentsec'></span>
+<br>
+<br>
+<i id='copyr' class='bottom-right'><img src="mjg_gif.gif" id="mjggif" alt="By MJG"/>Copyright © 2020 Matthew Jonathan G</i>
+<script src='app.js'></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body{
+    background-color: black;
+}
+#copyr{
+    color: white;
+    margin-right: 1%;
+    float: right;
+}
+#sel{
+    font-family: Century Gothic;
+}
+#calculatorheading{
+    color: white;
+    text-align: justify;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 2px;
+    font-family: Century Gothic;
+}
+#mjggif{
+    height: 80px;
+    width: 80px;
+}
+table{
+    color: white;
+}
+#loading{
+    border: 1px solid white;
+    margin-left: 41%;
+    margin-right: 41%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+#calculate,#reset{
+    color: white;
+    background-color: rgb(0, 97, 149);
+}
+#ansval{
+    color: greenyellow;
+}
+#answer{
+    border: 1px solid white;
+}
+#tableone{
+    padding-bottom: 2%;
+}
+h1{
+    border-top: 1px solid rgb(0, 16, 80);
+    border-bottom: 1px solid rgb(0, 16, 81);
+}
+h2{
+    border-top: 1px solid rgb(0, 139, 120);
+    border-bottom: 1px solid rgb(0,139,120);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: Century Gothic;
+}
+h2,h3,#ansval{
+    color: white;
+}
